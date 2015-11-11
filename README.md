@@ -8,6 +8,40 @@ This README is intended to help get you started. Definitely update and improve t
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+### env
+
+```
+$ heroku config:set ...
+```
+
+* AMAZON_AWS_ID
+* AMAZON_AWS_SECRET
+* AMAZON_AWS_TAG
+* HUBOT_SLACK_TOKEN
+* LIBRARY_ID_SHIBUYA
+* LIBRARY_PASSWORD_SHIBUYA
+* LIBRARY_ID_TAITO
+* LIBRARY_PASSWORD_TAITO
+
+### Listen
+
+```
+amazon #{title}
+```
+return the search result.
+
+```
+get_isbn #{title}
+```
+
+return the closest search result with ISBN (or ASIN).
+
+```
+fetch_lib
+```
+
+return the books you are borrowing from the libraries with ISBN(or ASIN).
+
 ### Running book-bot Locally
 
 You can test your hubot by running the following.
